@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 * {
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 500;
+  font-family: "Montserrat" !important;
+  font-size: 15px;
+  font-weight: 600;
+  color: #303030;
 }
+
 input {
   height: 40px;
   border: 1px solid rgb(113, 125, 182);
@@ -18,7 +20,7 @@ input:focus {
   border: 1px solid rgb(23, 28, 52);
 }
 
-.outline-btn {
+.outlined-btn {
   border: 1px solid #302550;
   color: #302550;
   padding: 10px 20px;
@@ -32,4 +34,17 @@ input:focus {
   padding: 5px 20px;
   height: 40px;
   text-transform: uppercase;
+}
+
+.disabled-btn {
+  background-color: #cac8cd;
+  color: rgb(92, 90, 90);
+  padding: 5px 20px;
+  height: 40px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.file-input{
+  border: none !important;
 }

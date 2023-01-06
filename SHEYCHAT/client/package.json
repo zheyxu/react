@@ -7,14 +7,18 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.2.2",
+    "axios": "^1.2.0",
+    "emoji-picker-react": "^4.4.7",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.0",
+    "react-modal": "^3.16.1",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.6.1",
-    "react-scripts": "^5.0.1",
+    "react-router-dom": "^6.4.4",
+    "react-scripts": "5.0.1",
     "redux": "^4.2.0",
+    "socket.io-client": "^4.5.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,6 +46,9 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4"
-  }
+  },
+  "proxy": "http://localhost:5001"
 }
