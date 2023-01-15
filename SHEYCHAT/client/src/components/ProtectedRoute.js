@@ -17,7 +17,7 @@ function ProtectedRoute({ children }) {
       const response = await GetCurrentUser();
       const allUsersResponse = await GetAllUsers();
       const allChatsResponse = await GetAllChats();
-      dispatch(HideLoader());
+      dispatch(HideLoader("Haha"));
       if (response.success) {
         dispatch(SetUser(response.data));
         dispatch(SetAllUsers(allUsersResponse.data));

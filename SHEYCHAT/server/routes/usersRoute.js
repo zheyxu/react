@@ -102,7 +102,7 @@ router.get("/get-current-user", authMiddleware, async (req, res) => {
 
 router.get("/get-all-users", authMiddleware, async (req, res) => {
   try {
-    const allUsers = await User.find({ _id: { $ne: req.body.userId } });
+    const allUsers = await User.find({ _id: { $ne: req.body.userId } }); // ne not equal to
     res.send({
       success: true,
       message: "Users fetched successfully",
